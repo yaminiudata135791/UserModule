@@ -6,7 +6,7 @@ package com.user.service.impl;
     import org.springframework.beans.factory.annotation.Autowired;
     import org.springframework.stereotype.Service;
 
-    import com.user.model.Signup;
+    import com.user.model.UserModule;
     import com.user.repo.UserRepository;
     import com.user.service.UserService;
     @Service
@@ -15,7 +15,7 @@ package com.user.service.impl;
     UserRepository userrepo;
 
      @Override
-    public List<Signup> getSignupData() {
+    public List<UserModule> getSignupData() {
     return userrepo.findAll();
 
      }

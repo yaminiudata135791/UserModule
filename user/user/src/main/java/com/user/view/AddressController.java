@@ -3,22 +3,23 @@ package com.user.view;
 
 
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.user.model.UserModule;
-import com.user.service.UserService;
+import com.user.model.Address;
+import com.user.service.AddressService;
 @RestController
-public class UserController {
+public class  AddressController{
 @Autowired
-UserService userService;
+AddressService AddressService;
 
- @RequestMapping({ "/", "/usermoduleproject" })
-public List<UserModule> getSignupData() {
-return userService.getSignupData();
+ @RequestMapping({ "/", "/address" })
+public List<Address> getAddressData() {
+return AddressService.getAddressData();
 }
 }
 

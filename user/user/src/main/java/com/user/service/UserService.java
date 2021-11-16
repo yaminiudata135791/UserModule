@@ -4,10 +4,10 @@ package com.user.service;
 
 	import java.util.List;
 
-	import com.user.model.Signup;
+	import com.user.model.UserModule;
 
 	public interface UserService {
-	public List<Signup> getSignupData();
+	public List<UserModule> getSignupData();
 
 	}
 
